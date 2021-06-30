@@ -415,6 +415,13 @@
     "@ckeditor/ckeditor5-ui" "^19.0.1"
     "@ckeditor/ckeditor5-utils" "^19.0.1"
 
+"@ckeditor/ckeditor5-horizontal-line@^28.0.0":
+  version "28.0.0"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-horizontal-line/-/ckeditor5-horizontal-line-28.0.0.tgz#b933827efa675adeedde85288185e75e115e212c"
+  integrity sha512-fdzC+mRSOfl0/FGkV9W9k/GBIK9bgFVYcCbKBjyzmNHYLtKn18F2uaCHP6pQH44gvmGVjZi0/slb6Av8iZGXpA==
+  dependencies:
+    ckeditor5 "^28.0.0"
+
 "@ckeditor/ckeditor5-image@^19.0.0", "@ckeditor/ckeditor5-image@^19.0.1":
   version "19.0.1"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-image/-/ckeditor5-image-19.0.1.tgz#759729c116066f791d501362f48bc427aebe67e8"

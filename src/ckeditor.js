@@ -10,7 +10,7 @@ import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapte
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
-// import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
+import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
 import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
@@ -25,6 +25,7 @@ import List from '@ckeditor/ckeditor5-list/src/list';
 import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
+import SelectAll from '@ckeditor/ckeditor5-select-all/src/selectall';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
@@ -37,11 +38,12 @@ export default class ClassicEditor extends ClassicEditorBase {}
 ClassicEditor.builtinPlugins = [
 
 	Essentials,
+	SelectAll,
 	UploadAdapter,
 	Autoformat,
 	Bold,
 	Italic,
-	// BlockQuote,
+	BlockQuote,
 	CKFinder,
 	EasyImage,
 	Heading,
@@ -110,11 +112,12 @@ ClassicEditor.defaultConfig = {
 			'outdent',
 			'|',
 			'imageUpload',
-			// 'blockQuote',
+			'blockQuote',
 			'insertTable',
 			'mediaEmbed',
 			'undo',
-			'redo'
+			'redo',
+			'selectAll'
 		]
 	},
 	image: {
